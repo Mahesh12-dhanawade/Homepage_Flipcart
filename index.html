@@ -23,6 +23,9 @@
     rel="stylesheet">
   <!-- CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <!-- js link -->
+  <script src="index.js"></script>
 </head>
 
 <body>
@@ -36,8 +39,15 @@
         <a class="navbar-brand" id="logo" href="#">Flipcart</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon" id="icon"></span>
         </button>
+       
+          <button onclick="changeMode()" id="darklight" class="darkmode">
+          <span><i class="fa-solid fa-moon" id="moon"></i></span>
+          <span><i class="fa-solid fa-cloud"></i> </span>
+          </button>
+        
+      </span>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -80,7 +90,7 @@
   </header>
 
   <main>
-    <section id="categories">\
+    <section id="categories">
 
       <!-- Category start  -->
       <h4 class="text-center">
@@ -237,9 +247,9 @@
       <a href="#"><i class="fa-brands fa-instagram" id="insta"></i></a>
       <a href="#"><i class="fa-brands fa-linkedin"></i></a>
     </div>
-      <div class="info">
-        <p>Created By &copy; Mahesh Dhanawade</p>
-      </div>
+    <div class="info">
+      <p>Created By &copy; Mahesh Dhanawade</p>
+    </div>
   </footer>
 
 
