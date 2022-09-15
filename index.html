@@ -29,40 +29,59 @@
 </head>
 
 <body>
+  <div id="coupon">
+   
+      <button id="cbtn" onClick="closeCoupon()">&times;</button>
+   
+    <div>
+      <h2>Congratulations!</h2>
+      <p>You can get</p>
+      <div class="discount">75% off</div>
+      <p>Here is your code</p>
+      <div class="code">LBSAVE75</div>
+      <a href="#" class="btn">Redeem</a>
+    </div>
+
+  </div>
+
   <header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./images/logo-img.png" alt="" width="40" height="24">
-        </a>
-        <a class="navbar-brand" id="logo" href="#">Flipcart</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon" id="icon"></span>
-        </button>
-       
-          <button onclick="changeMode()" id="darklight" class="darkmode">
-          <span><i class="fa-solid fa-moon" id="moon"></i></span>
-          <span><i class="fa-solid fa-cloud"></i> </span>
+
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo-img.png" alt="" width="40" height="24">
+          </a>
+          <a class="navbar-brand" id="logo" href="#">Flipcart</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="icon"></span>
           </button>
-        
-      </span>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Signup</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
-            </li>
-          </ul>
+
+          <button onclick="changeMode()" id="darklight" class="darkmode">
+            <span><i class="fa-solid fa-moon" id="moon"></i></span>
+            <span><i class="fa-solid fa-cloud"></i> </span>
+          </button>
+
+          <!-- </span> -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -251,7 +270,9 @@
       <p>Created By &copy; Mahesh Dhanawade</p>
     </div>
   </footer>
-
+  <script>
+    window.onload = loadCoupon()
+  </script>
 
 
 
